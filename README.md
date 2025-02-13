@@ -1,25 +1,35 @@
-## Folder Structure 
+# Project Structure
 ```
 whatsapp-tour-bot/
-│── src/
-│   ├── config/  
-│   │   ├── db.js
-│   │   ├── env.js
-│   ├── controllers/
+│── 📁 src/                 
+│   ├── 📁 config/          
+│   │   ├── db.js           
+│   │   ├── meta.js          
+│   │   ├── twilio.js       
+│   │   ├── stripe.js     
+│   │  
+│   ├── 📁 routes/           
+│   │   ├── whatsapp.js      
+│   │   ├── payment.js      
+│   │  
+│   ├── 📁 controllers/        
 │   │   ├── whatsappController.js
-│   │   ├── tourController.js
-│   │   ├── paymentController.js
-│   ├── models/
-│   │   ├── tourModel.js
-│   ├── routes/
-│   │   ├── whatsappRoutes.js
-│   │   ├── tourRoutes.js
-│   │   ├── paymentRoutes.js
-│   ├── utils/
-│   │   ├── aiHelper.js
-│   │   ├── validation.js
-│   ├── app.js
-│   ├── server.js
-├── .env
-├── package.json
+│   │   ├── aiController.js        
+│   │   ├── bookingController.js   
+│   │  
+│   ├── 📁 models/          
+│   │   ├── enquiryModel.js  
+│   │   ├── bookingModel.js  
+│   │  
+│   ├── 📁 utils/            
+│   │   ├── generateTour.js  
+│   │   ├── sendMessage.js   
+│   │  
+│   ├── app.js               
+│   ├── webhook.js         
+│  
+│── 📁 tests/                 
+│── .env                     
+│── package.json             
+│── README.md               
 ```
